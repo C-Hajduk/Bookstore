@@ -1,3 +1,5 @@
+// auf die Bücher zugreifen
+
 function renderBooks() {
   let list = document.getElementById("bookList");
   list.innerHTML = "";
@@ -6,3 +8,7 @@ function renderBooks() {
     list.innerHTML += templateBookList(index);
   }
 }
+
+// Funktion Like
+
+// Funktion Kommentar
