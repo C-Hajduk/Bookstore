@@ -37,7 +37,7 @@ body {
 /* Buchliste als Grid */
 .bookList {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
   width: 100%;
   max-width: 1200px;
@@ -62,7 +62,7 @@ body {
 .book h2 {
   color: #C55FFC;
   margin-bottom: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .imgBook {
@@ -71,10 +71,24 @@ body {
 }
 
 /* Beschreibung */
-.book p {
+.details {
   color: #323E42;
-  font-size: 0.95rem;
-  margin-bottom: 0.75rem;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 0px;
+}
+
+.wrapperLike {
+    display: flex;
+    justify-content: flex-end;
+    width: 100px;
 }
 
 .commentInput {
