@@ -1,14 +1,27 @@
 // auf die Bücher zugreifen
 
 function renderBooks() {
-  let list = document.getElementById("bookList");
-  list.innerHTML = "";
+  let bookListRef = document.getElementById("bookList"); //container holen
+  bookListRef.innerHTML = ""; //Inhalte löschen
 
+  //Jedes Buch aus dem Array anzeigen
   for (let index = 0; index < books.length; index++) {
-    list.innerHTML += templateBookList(index);
+    bookListRef.innerHTML += templateBookList(index); // HTML von template.js einfügen
   }
 }
 
 // Funktion Like
 
 // Funktion Kommentar
+function addNote() {
+  let noteInputRef = document.getElementById("noteInput");
+  let noteInput = noteInputRef.value;
+
+  if (noteInput.length > 0) {
+    .push(noteInput); //wo will ich es hinpuschen? Ins Inputfeld
+    
+  }
+
+  noteInputRef.value = "";
+  
+}
