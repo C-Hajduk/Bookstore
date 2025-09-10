@@ -13,15 +13,13 @@ function renderBooks() {
 // Funktion Like
 
 // Funktion Kommentar
-function addNote() {
+function addComment() {
   let noteInputRef = document.getElementById("noteInput");
   let noteInput = noteInputRef.value;
 
   if (noteInput.length > 0) {
-    .push(noteInput); //wo will ich es hinpuschen? Ins Inputfeld
-    
+    books.push(noteInput); //wo will ich es hinpuschen? in die Comments
   }
 
   noteInputRef.value = "";
-  
 }
