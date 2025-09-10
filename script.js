@@ -13,16 +13,21 @@ function renderBooks() {
 // Funktion Like
 
 // Funktion Kommentar
-function addComment() {
+function addComment(index) {
   let noteInputRef = document.getElementById("noteInput");
   let noteInput = noteInputRef.value.trim;
 
   if (noteInput.length > 0) {
-    // push(noteInput); //wo will ich es hinpuschen? in die Comments
+    books[index].comments.push(noteInput); //wo will ich es hinpuschen? in die Comments
   }
-
-  // wenn ich auf enter oder den Button klicke, dann erscheint die Nachricht im inputfeld
-  // nach Eingabe soll das Inputfeld gelert werden.
 
   noteInputRef.value = "";
 }
+
+function generateComents() {
+  let comments = "";
+  for (let index = 0; index < books.length; index++) {
+    comments += `books: ${index}`;
+  }
+}
+return comments;
