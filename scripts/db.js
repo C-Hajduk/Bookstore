@@ -17,7 +17,7 @@ let books = [
     author: "Max Bauer",
     likes: 342,
     liked: false,
-    price: 29.5,
+    price: 29.99,
     publishedyear: 2019,
     genre: "Sachbuch",
     comments: [

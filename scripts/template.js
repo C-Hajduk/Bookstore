@@ -1,5 +1,4 @@
 function templateBookList(index) {
-  // Warum gibt er das Template nicht zurück?
   return `
     <h2>${books[index].name}</h2>
         <hr>
@@ -16,12 +15,10 @@ function templateBookList(index) {
         <hr>
         <div class="comments">
             <h3>Kommentare: "${books[index].comments}"</h3>
-            <input class="input" id="noteInput" type="text" placeholder="Kommentare hinzufügen..." >
-            <button class="inputButton">
-              <img class="sendButton" src="" alt="">
+            <input class="input" id="noteInput" type="text" placeholder="Kommentare hinzufügen..." onkeypress="addComment()">
+            <button class="inputButton" onclick="">
+              <img class="sendButton" src="./assets/img/paper-plane-icon.png" alt="">
             </button>
         </div>  
   `;
 }
-
-// wie greife ich auf die richtigen Bücher zu und wie verdoppelt sich dieses Template pro Buch?
