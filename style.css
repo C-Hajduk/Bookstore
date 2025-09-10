@@ -1,0 +1,109 @@
+/* Allgemeines Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, sans-serif;
+}
+
+/* Hintergrund */
+body {
+  background-color: #EFDCF9; /* heller Hintergrund */
+  color: #323E42;            /* Grundfarbe für Text */
+  line-height: 1.6;
+}
+
+/* Header */
+.heading {
+  background: #C55FFC;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(50, 62, 66, 0.3);
+}
+
+.heading h1 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Hauptbereich */
+.mainDisplay {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Buchliste als Grid */
+.bookList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Einzelne Buchkarte */
+.book {
+  background: white;
+  border: 2px solid #7954A1;
+  border-radius: 16px;
+  padding: 1.2rem;
+  box-shadow: 0 6px 12px rgba(50, 62, 66, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 18px rgba(50, 62, 66, 0.25);
+}
+
+/* Titel */
+.book h2 {
+  color: #C55FFC;
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.imgBook {
+    width: 250px;
+    padding: 20px 0px;
+}
+
+/* Beschreibung */
+.book p {
+  color: #323E42;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.commentInput {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.input {
+    padding: 7px;
+    border-radius: 12px;
+}
+
+/* Absende Button */
+.inputButton {
+  background: #7954A1;
+  color: #EFDCF9;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.inputButton:hover {
+  background: #C55FFC;
+}
+
+.sendButton {
+    width: 25px;
+}
