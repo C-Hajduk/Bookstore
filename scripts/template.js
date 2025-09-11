@@ -9,7 +9,7 @@ function templateBookList(index) {
         <div class="wrapper">
           <p class="price">${books[index].price} €</p>
           <div class="wrapperLike">
-            <span class="like" onclick="toggleLike">❤️</span> 
+            <span class="like" onclick="toggleLike(${index})">🤍</span> 
             <span>${books[index].likes}</span>
           </div>  
         </div>  

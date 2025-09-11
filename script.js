@@ -12,6 +12,10 @@ function renderBooks() {
 
 // Funktion Like
 
+function toggleLike (index) {
+  
+}
+
 
 function addComment(index) {
   // holt sich die werte aus den Inputs

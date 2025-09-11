@@ -8,8 +8,10 @@
 
 /* Hintergrund */
 body {
-  background-color: #EFDCF9; /* heller Hintergrund */
-  color: #323E42;            /* Grundfarbe für Text */
+  background-color: #EFDCF9;
+  /* heller Hintergrund */
+  color: #323E42;
+  /* Grundfarbe für Text */
   line-height: 150%;
 }
 
@@ -66,8 +68,8 @@ body {
 }
 
 .imgBook {
-    width: 250px;
-    padding: 20px 0px;
+  width: 250px;
+  padding: 20px 0px;
 }
 
 /* Beschreibung */
@@ -78,29 +80,29 @@ body {
 }
 
 .wrapper {
-    display: flex;
-    justify-content: space-around;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 12px 0px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 0px;
 }
 
 .wrapperLike {
-    display: flex;
-    justify-content: flex-end;
-    width: 100px;
+  display: flex;
+  justify-content: flex-end;
+  width: 100px;
 }
 
 .commentInput {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .input {
-    padding: 7px;
-    border-radius: 12px;
+  padding: 7px;
+  border-radius: 12px;
 }
 
 /* Absende Button */
@@ -119,5 +121,5 @@ body {
 }
 
 .sendButton {
-    width: 25px;
+  width: 25px;
 }
