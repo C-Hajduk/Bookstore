@@ -14,16 +14,17 @@ function templateBookList(index) {
           </div>  
         </div>  
             <p><strong>Author:</strong> ${books[index].author}</p>
-            <p><strong>Erscheinungsjahr:</strong> ${books[index].publishedyear}</p>
+            <p><strong>Erscheinungsjahr:</strong> ${books[index].publishedyear}
+            </p>
             <p><strong>Genre:</strong> ${books[index].genre}</p>
         </section>
         <hr>
         <div class="comments">
-            <h3>Kommentare: </h3>
-            <p></p>
+            <h3><u>Kommentare:</u></h3>
+            <p>${generateComments(index)}</p>
             <div class="commentInput">
-              <input class="input" id="noteInput" type="text" placeholder="Kommentare hinzufügen...">
-              <button class="inputButton" onclick="">
+              <input class="input" id="noteInput-${index}" type="text" placeholder="Kommentare hinzufügen...">
+              <button class="inputButton" onclick="addComment(${index})">
                 <img class="sendButton" src="./assets/img/paper-plane-icon.png" alt="Absenden">
               </button>
             </div>
