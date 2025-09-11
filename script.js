@@ -15,19 +15,19 @@ function renderBooks() {
 // Funktion Kommentar
 function addComment(index) {
   let noteInputRef = document.getElementById("noteInput");
-  let noteInput = noteInputRef.value.trim;
+  let noteInput = noteInputRef.value;
 
   if (noteInput.length > 0) {
     books[index].comments.push(noteInput); //wo will ich es hinpuschen? in die Comments
+    renderBooks();
   }
-
   noteInputRef.value = "";
 }
 
-function generateComents() {
+/* function generateComments() {
   let comments = "";
   for (let index = 0; index < books.length; index++) {
-    comments += `books: ${index}`;
+    comments += `${index}`;
   }
-}
-return comments;
+  return comments;
+} */

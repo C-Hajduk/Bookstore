@@ -10,7 +10,7 @@
 body {
   background-color: #EFDCF9; /* heller Hintergrund */
   color: #323E42;            /* Grundfarbe für Text */
-  line-height: 1.6;
+  line-height: 150%;
 }
 
 /* Header */
