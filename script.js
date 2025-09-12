@@ -14,19 +14,18 @@ function renderBooks() {
 
 function toggleLike (index) {
   let isLiked = books[index].liked
-  // let heartRef = document.getElementById("heart")
-  // heartRef = heart;
+  let heartRef = document.getElementById("heart")
 
-  // das Hers soll die farbe ändern, sobald ich drauf klicke
+  // das Herz soll die farbe ändern, sobald ich drauf klicke
 
   if (isLiked) {
     books[index].likes--;
     books[index].liked = false;
-    // heart.innerHTML = "🤍" // wenn false, dann wird das herz grau
+    heartRef.innerHTML = "🤍" // wenn false, dann wird das herz grau
   }else { 
     books[index].likes++
     books[index].liked = true;
-    // heart.innerHTML = "❤️" // wenn true, dann wird das herz rot
+    heartRef.innerHTML = "❤️" // wenn true, dann wird das herz rot
   } 
   renderBooks();
 }
