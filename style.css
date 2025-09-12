@@ -47,6 +47,7 @@ body {
 
 /* Einzelne Buchkarte */
 .book {
+  width: 100%;
   background: white;
   border: 2px solid #7954A1;
   border-radius: 16px;
@@ -98,6 +99,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  margin-top: 18px;
 }
 
 .input {
@@ -128,12 +130,30 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 320px) {
-  body {
-    margin: 5px;
+@media (width < 370px) {
+  .book {
+    width: 80%;
   }
 
-  .book {
-    max-width: 100%;
+  .imgBook {
+    width: 200px;
   }
+
+  .commentInput {
+    padding: 4px 0px;
+  }
+
+  .input {
+    width: 80%;
+  }
+
+  .inputButton {
+    width: 60px;
+  }
+
+  .sendButton {
+    width: 16px;
+  }
+
+
 }
