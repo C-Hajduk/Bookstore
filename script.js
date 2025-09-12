@@ -7,14 +7,15 @@ function renderBooks() {
   //Jedes Buch aus dem Array anzeigen
   for (let index = 0; index < books.length; index++) { //geht durch ALLE Bücher im Array "books"
     bookListRef.innerHTML += templateBookList(index); // ruft die Funktion templateBookList() auf und hängt das erzeugte HTML für ein Buch an
+    loadHearts(index);
   }
 }
 
 // Funktion Like
 
 function toggleLike (index) {
-  let isLiked = books[index].liked
-  let heartRef = document.getElementById("heart")
+  let isLiked = books[index].liked;
+  let heartRef = document.getElementById(`heart${index}`);
 
   // das Herz soll die farbe ändern, sobald ich drauf klicke
 
@@ -28,6 +29,17 @@ function toggleLike (index) {
     heartRef.innerHTML = "❤️" // wenn true, dann wird das herz rot
   } 
   renderBooks();
+}
+
+function loadHearts(index){
+  let addHeart = books[index].liked;
+  let heartRef = document.getElementById(`heart${index}`);
+
+  if (addHeart) {
+    heartRef.innerHTML = "❤️";
+  }else {
+    heartRef.innerHTML = "🤍"
+  }
 }
 
 
