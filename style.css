@@ -123,3 +123,17 @@ body {
 .sendButton {
   width: 25px;
 }
+
+.heart {
+  cursor: pointer;
+}
+
+@media (max-width: 320px) {
+  body {
+    margin: 5px;
+  }
+
+  .book {
+    max-width: 100%;
+  }
+}

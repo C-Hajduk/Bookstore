@@ -9,8 +9,8 @@ function templateBookList(index) {
         <div class="wrapper">
           <p class="price">${books[index].price} €</p>
           <div class="wrapperLike">
-            <span class="like" onclick="toggleLike(${index})">🤍</span> 
-            <span>${books[index].likes}</span>
+            <span id="heart(${[index]})" class="heart" onclick="toggleLike(${index})">❤️</span> 
+            <span id="likes">${books[index].likes}</span>
           </div>  
         </div>  
             <p><strong>Author:</strong> ${books[index].author}</p>
